@@ -1,0 +1,99 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+
+<!--/ Intro Skew Star /-->
+<div id="home" class="intro route bg-image">
+  <div class="overlay-itro"></div>
+  <div class="intro-content display-table">
+    <div class="table-cell">
+      <div class="container">
+        <!--<p class="display-6 color-d">Hello, world!</p>-->
+        <h1 class="intro-title mb-4">{{name}}</h1>
+        <p class="intro-subtitle"><span class="text-slider-items">backend developer</span><strong
+            class="text-slider"></strong></p>
+        <!-- <p class="pt-3"><a class="btn btn-primary btn js-scroll px-4" href="#about" role="button">Learn More</a></p> -->
+      </div>
+    </div>
+  </div>
+</div>
+<!--/ Intro Skew End /-->
+
+<section id="about" class="about-mf sect-pt4 route">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="box-shadow-full">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="row">
+                <div class="col-sm-6 col-md-7">
+                  <div class="about-info">
+                    <p><span class="title-s">Name: </span> <span>{{name}}</span></p>
+                    <p><span class="title-s">Age: </span> <span>{{age}}</span></p>
+                    <p><span class="title-s">City: </span> <span>{{city}}</span></p>
+                    <p><span class="title-s">Education: </span> <span>{{education}}</span></p>
+                    <p><span class="title-s">Language: </span> <span>{{language}}</span></p><br>
+                  </div>
+                </div>
+              </div>
+              <div class="skill-mf">
+                <p class="title-s">Skill</p>
+                <span>Python</span> <span class="pull-right">80%</span>
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0"
+                    aria-valuemax="100"></div>
+                </div>
+                <span>Djnago</span> <span class="pull-right">70%</span>
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0"
+                    aria-valuemax="100"></div>
+                </div>
+                <span>html</span> <span class="pull-right">50%</span>
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0"
+                    aria-valuemax="100"></div>
+                </div>
+                <span>css</span> <span class="pull-right">40%</span>
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar" style="width: 40%" aria-valuenow="40" aria-valuemin="0"
+                    aria-valuemax="100"></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="about-me pt-4 pt-md-0">
+                <div class="title-box-2">
+                  <h5 class="title-left">
+                    About me
+                  </h5>
+                </div>
+                <p class="lead">
+                  My name is Mobin and I am currently learning Django It's been a year since I started programming and
+                  right now I'm in the 11th grade of high school
+                </p>
+                <p class="lead">
+                  <!-- about -->
+                </p>
+                <p class="lead">
+                  <!-- about -->
+                <div class="title-box-2">
+                  <h5 class="title-left">
+                    My project
+                  </h5>
+                </div>
+                <p class="lead">
+                  Click <a href="https://github.com/MobinNemati/" target=”_blank”>here</a> to see my project
+                </p>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% endblock content %}
